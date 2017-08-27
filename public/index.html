@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天气预报</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/Ajax.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="headTop">
+            <div class="position">
+                <div class="positionIcon"></div>
+                <div class="where">
+                    重庆市天气
+                </div>
+            </div>
+            <div class="releaseTime">
+                12分钟前发布
+            </div>
+            <!-- <div class="nowTime">
+                00:00
+            </div> -->
+            <div class="weather">
+                <div class="temperature"></div>
+                <div class="description"></div>
+                <div class="weatherIcon"></div>
+                <div class="other">
+                    <div class="wind small"></div>
+                    <div class="humidity small"></div>
+                    <div class="pressure small"></div>
+                    <div class="air small"></div>
+                </div>
+                <div class="more">
+                    <div class="sevenDays">七天预报</div>
+                    <div class="hours">24小时预报</div>
+                </div>
+            </div>
+            <div class="todayAndTomorrow">
+                <div class="today">
+                    <span class="time">今天</span>
+                    <span class="airQuality"></span>
+                    <span class="minAndMax"></span>
+                    <span class="how"></span>
+                    <span class="howIcon"></span>
+                </div>
+                <div class="tomorrow">
+                    <span class="time">明天</span>
+                    <span class="airQuality"></span>
+                    <span class="minAndMax"></span>
+                    <span class="how"></span>
+                    <span class="howIcon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="seven">
+            <canvas width="" height="" id="sevenDaysCanvas">
+            </canvas>
+            <div class="days">
+                <div class="top">
+                    <div class="when">昨天</div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+            <div class="days right_1">
+                <div class="top">
+                    <div class="when">今天</div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+            <div class="days right_2">
+                <div class="top">
+                    <div class="when">明天</div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+            <div class="days right_3">
+                <div class="top">
+                    <div class="when"></div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+            <div class="days right_4">
+                <div class="top">
+                    <div class="when"></div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+            <div class="days right_5">
+                <div class="top">
+                    <div class="when"></div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+            <div class="days right_6" id="last">
+                <div class="top">
+                    <div class="when"></div>
+                    <div class="date"></div>
+                    <div class="maxTemp"></div>
+                </div>
+                <div class="bottom">
+                    <div class="minTemp"></div>
+                    <div class="weather"></div>
+                    <div class="air"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="twentyHours">
+            <p></p>
+        </div> -->
+    </div>
+    <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
